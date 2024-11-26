@@ -1,6 +1,6 @@
 :root {
     --primary-color: #000000;
-    --secondary-color: #000000;
+    --secondary-color: #030101;
 }
 
 body {
@@ -109,13 +109,20 @@ nav {
 
   .bot-message {
       background: var(--primary-color);
-      color: white;
+      color: #00ff00;
+      border: 2px solid #00ff00;
+      box-shadow: 0 0 15px #00ff00;
+      text-shadow: 0 0 5px #00ff00;
   }
 
   .user-message {
       background: var(--secondary-color);
       margin-left: auto;
       flex-direction: row-reverse;
+      border: 2px solid #00ff00;
+      box-shadow: 0 0 15px #00ff00;
+      text-shadow: 0 0 5px #00ff00;
+      color: #00ff00;
   }
 
 .chat-container {
@@ -430,3 +437,23 @@ main {
       width: 100%;
       height: 100%;
   }
+
+.chat-messages::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background: #00ff00;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background: #00cc00;
+    box-shadow: 0 0 20px #00ff00;
+}

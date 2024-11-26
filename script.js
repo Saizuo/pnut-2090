@@ -33,7 +33,7 @@ function addMessageToChat(message, className) {
     messageDiv.className = `message ${className}`;
           if (className === 'bot-message') {
               const pnutIcon = document.createElement('img');
-              pnutIcon.src = 'image.png';
+              pnutIcon.src = 'image1.png';
               pnutIcon.className = 'message-icon';
               messageDiv.appendChild(pnutIcon);
           }
