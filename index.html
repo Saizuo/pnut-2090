@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pnut - The Nutty Chatbot</title>
+    <link rel="icon" type="image/png" href="image.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="matrix-background">
+        <div class="wrapper"></div>
+    </div>
+    <header>
+        <div class="logo-container">
+            <img src="image.png" alt="Pnut Logo" class="logo">
+            <h1 class="bounce">Pnut 2090</h1>
+        </div>
+        <nav>
+            <a href="#" class="wobble-button" target="_blank">X</a>
+            <a href="#" class="wobble-button" target="_blank">PUMP.FUN</a>
+            <a href="https://t.me/talk_pnut" class="wobble-button" target="_blank">TELEGRAM</a>
+        </nav>
+    </header>
+    <main>
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="input-container">
+                <input type="text" id="userInput" placeholder="Ask Pnut something nutty!">
+                <button onclick="sendMessage()" class="send-button">🥜</button>
+            </div>
+        </div>
+        <div class="model-box">
+            <div class="model-container">
+                <div class="sketchfab-embed-wrapper">
+                    <iframe 
+                        title="chungchung pose 2" 
+                        frameborder="0" 
+                        allowfullscreen 
+                        mozallowfullscreen="true" 
+                        webkitallowfullscreen="true" 
+                        allow="autoplay; fullscreen; xr-spatial-tracking" 
+                        xr-spatial-tracking 
+                        execution-while-out-of-viewport 
+                        execution-while-not-rendered 
+                        web-share 
+                        src="https://sketchfab.com/models/641701ce534f4a87b86f8143e8bb6536/embed?autostart=1&ui_controls=0&ui_infos=0&ui_inspector=0&ui_stop=0&ui_watermark=0&ui_watermark_link=0&transparent=1">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="matrix.js"></script>
+</body>
+</html>
